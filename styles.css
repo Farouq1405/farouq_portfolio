@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html{
+    background-color: #fff;
+    height: 100%;
+    background-image: url(Farouqbg.png);
+    background-repeat: no-repeat;
+    background-position: right 120px bottom 80px; /* Moves the image 20px to the left and 20px up */
+    background-size: 600px 100%;
+    background-attachment: fixed;
+}
+.header {
+    position: relative; /* Set position relative */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 0 40px;
+}
+
+.my-name {
+    font-size: 28px;
+    font-weight: 5000;
+    position: relative; /* Set position relative */
+}
+
+.my-name #alpha {
+    color: #9E10D8;
+}
+
+.my-mail {
+    text-decoration: none;
+}
+
+.nav {
+    position: absolute; /* Position the navigation absolutely */
+    top: 0; /* Align to the top */
+    margin-bottom: 0px;
+    margin-left: 450px; /* Adjust position from right */
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+}
+
+.nav ul li {
+    margin-right: 20px;
+    transition: transform 0.4s ease;
+}
+
+.nav ul li:hover{
+    transform: scale(1.4);
+}
+
+.nav ul li:last-child {
+    margin-right: 0;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    /*font-weight: 900;*/
+    color: #000000;
+}
+
+/*.profile-picture {
+    height: 100vh;
+    border-radius: 50%;
+    background-position: right-top;
+}*/
+
+.article{
+    margin-right: 700px;
+    margin-top: 150px;
+    padding-left: 40px;
+}
+
+.article .details #full-name{
+    color: #9E10D8;
+    text-transform: uppercase;
+}
+
+.article .header-3{
+    margin-top: 5px;
+}
+
+.article .info-text{
+    margin-top: 10px;
+}
+
+.btn-1 {
+    font-weight: bolder;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #fff; /* Set background color */
+    color: #000000; /* Set text color */
+    text-decoration: none; /* Remove underline */
+    border: 2px dotted #9E10D8; /* Remove border */
+    border-radius: 5px; /* Apply border-radius for rounded corners */
+    cursor: pointer; /* Set cursor to pointer on hover */
+    transition: background-color 0.3s; /* Add transition for smooth hover effect */
+    margin: 30px 0 0 350px;
+}
+
+.btn-1:hover {
+    background-color: #000000; /* Change background color on hover */
+    color: #9E10D8;
+    font-weight: bolder;
+}
+
+.btn-2 {
+    font-weight: bolder;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #FFF; /* Set background color */
+    color: #9E10D8; /* Set text color */
+    text-decoration: none; /* Remove underline */
+    border: 2px dotted #000000; /* Remove border */
+    border-radius: 5px; /* Apply border-radius for rounded corners */
+    cursor: pointer; /* Set cursor to pointer on hover */
+    transition: background-color 0.3s; /* Add transition for smooth hover effect */
+    margin-left: 20px;
+}
+
+.btn-2:hover {
+    background-color: #9E10D8; /* Change background color on hover */
+    color: #000000;
+    font-weight: bolder;
+}
+
+.social-media{
+    font-size: 24px;
+    margin-top: 150px;
+    padding: 40px;
+}
+
+.social-media a.linkedin{
+    color: #0077b5;
+}
+
+.social-media a.facebook{
+    color: #3b5998;
+}
+
+.social-media a.twitter{
+    color: #1da1f2;
+}
+
+.social-media a.instagram{
+    color: #c13584;
+}
+
+.social-media a.whatsapp{
+    color: #25d366;
+}
+
+.social-media a.gmail{
+    color: #DB4437;
+}
+
+/* Default styles for larger screens */
+/* Add your default styles here */
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        position: static;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .article {
+        margin-right: 0;
+        margin-top: 20px;
+        padding-left: 20px;
+    }
+
+    .btn-1,
+    .btn-2 {
+        margin: 20px 0;
+    }
+
+    .social-media {
+        margin-top: 20px;
+    }
+}
